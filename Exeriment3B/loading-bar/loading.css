@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    font-family:'open sans',sans-serif;
+
+}
+.container{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.circle{
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    animation: circle 1s linear infinite;
+}
+    @keyframes circle {
+        0%{
+            transform: (0deg);
+            box-shadow: 1px 5px 2px #eb0303;
+        }
+        50%{
+            transform: rotate(180deg);
+            box-shadow: 1px 5px 2px #1518be;
+        }
+        100%{
+            transform: rotate(180deg);
+            box-shadow: 1px 5px 2px #10ee40;
+        }
+        
+    }
